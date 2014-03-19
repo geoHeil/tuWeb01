@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<html lang="de">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" media="screen" href="./styles/style.css"/>
-    <link rel="stylesheet" media="screen" href="./styles/reset.css"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet " media="screen " href="./styles/style.css " />
+    <link rel="stylesheet " media="screen " href="./styles/reset.css " />
 
     <title>Quiz Registration</title>
 </head>
 
 <body>
-<header>
-    <img src="./img/big-logo-small.png" alt="Big Logo"/>
+    <header>
+        <img src="./img/big-logo-small.png " alt="Big Logo " />
 
-    <h1>Quiz</h1>
-    <a class="btn" href="#" title="Abmelden">Anmelden</a>
+        <h1>Quiz</h1>
+        <a class="btn " href="#" title="Anmelden">Anmelden</a>
 
-</header>
-<section>
-    <div class="form_persData">
-        <form method="post" action="table.html">
-            <fieldset>
-                <!-- http://www.dailycoding.com/Posts/layout_form_without_tables_with_css_trick.aspx -->
-                <label>Persönliche Daten</label>
-                <br>
-                <label>Vorname:</label>
-                <input id="name" name="name">
-                <br>
-                <label>Nachname:</label>
-                <input id="nachname" name="name">
-                <br>
-                <label>Geburtstag:</label>
-                <input id="geb">
-                <br>
-                <label>Geschlecht:</label>
-                <select>
-                    <option>Männlich</option>
-                    <option>Weiblich</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <label>Login Daten</label>
-                <br>
-                <label>Benutzername*:</label>
-                <input id="username">
-                <br>
-                <label>Passwort*:</label>
-                <input id="password">
-                <br>
-            </fieldset>
-            <button class="btn">Registrieren</button>
-        </form>
-    </div>
-</section>
-<footer>
-    Mit "*" gekennzeichnete Felder sind Pflichtfelder.
-    <p>&copy; 2014 BIG Quiz</p>
-</footer>
+    </header>
+    <section>
+        <div class="form_persData ">
+            <form method="post " action="table.html ">
+                <fieldset>
+                    <!-- http://www.dailycoding.com/Posts/layout_form_without_tables_with_css_trick.aspx -->
+                    <label>Persönliche Daten</label>
+                    <br>
+                    <label>Vorname:</label>
+                    <input type="text" id="name" name="name ">
+                    <br>
+                    <label>Nachname:</label>
+                    <input type="text" id="nachname" name="name ">
+                    <br>
+                    <label>Geburtstag:</label>
+                    <input type="date" id="geb">
+                    <br>
+                    <label>Geschlecht:</label>
+                    <select>
+                        <option>Männlich</option>
+                        <option>Weiblich</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label>Login Daten</label>
+                    <br>
+                    <label>Benutzername*:</label>
+                    <input type="text" id="username" pattern=".{4,8}" required>
+                    <br>
+                    <label>Passwort*:</label>
+                    <input type="password" id="password" pattern=".{4,8}" required>
+                    <br>
+                </fieldset>
+                <a class="btn " href="#" title="Anmelden">Anmelden</a>
+                <button class="btn">Registrieren</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <small>Mit "* " gekennzeichnete Felder sind Pflichtfelder.
+            <br>&copy;
+            <time>2014</time>BIG Quiz
+        </small>
+    </footer>
 </body>
 
 </html>
