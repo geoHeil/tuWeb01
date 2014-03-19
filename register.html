@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" media="screen" href="./styles/style.css"/>
+    <link rel="stylesheet" media="screen" href="./styles/reset.css"/>
 
     <title>Quiz Registration</title>
 </head>
@@ -16,39 +17,45 @@
     <a class="btn" href="#" title="Abmelden">Anmelden</a>
 
 </header>
-<div class="form_persData">
-    <!-- http://www.dailycoding.com/Posts/layout_form_without_tables_with_css_trick.aspx -->
-    <label>Persönliche Daten</label>
-    <br>
-    <label>Vorname:</label>
-    <input id="name" name="name">
-    <br>
-    <label>Nachname:</label>
-    <input id="nachname" name="name">
-    <br>
-    <label>Geburtstag:</label>
-    <input id="geb">
-    <br>
-    <label></label>
-    <label>Geschlecht:</label>
-    <select>
-        <option>Männlich</option>
-        <option>Weiblich</option>
-    </select>
-    <br>
-    <label>Login Daten</label>
-    <br>
-    <label>Benutzername*:</label>
-    <input id="username">
-    <br>
-    <label>Passwort*:</label>
-    <input id="password">
-    <br>
-    <a class="btn" href="#" title="Registrieren">Registrieren</a>
-</div>
+<section>
+    <div class="form_persData">
+        <form method="post" action="table.html">
+            <fieldset>
+                <!-- http://www.dailycoding.com/Posts/layout_form_without_tables_with_css_trick.aspx -->
+                <label>Persönliche Daten</label>
+                <br>
+                <label>Vorname:</label>
+                <input id="name" name="name">
+                <br>
+                <label>Nachname:</label>
+                <input id="nachname" name="name">
+                <br>
+                <label>Geburtstag:</label>
+                <input id="geb">
+                <br>
+                <label>Geschlecht:</label>
+                <select>
+                    <option>Männlich</option>
+                    <option>Weiblich</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Login Daten</label>
+                <br>
+                <label>Benutzername*:</label>
+                <input id="username">
+                <br>
+                <label>Passwort*:</label>
+                <input id="password">
+                <br>
+            </fieldset>
+            <button class="btn">Registrieren</button>
+        </form>
+    </div>
+</section>
 <footer>
     Mit "*" gekennzeichnete Felder sind Pflichtfelder.
-    <p>© 2014 BIG Quiz</p>
+    <p>&copy; 2014 BIG Quiz</p>
 </footer>
 </body>
 

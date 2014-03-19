@@ -1,7 +1,7 @@
-a {
+#charset"UTF-8";
+ a {
     text-decoration: none;
 }
-
 body {
     background-image: url('../img/style1-background.png');
     background-position-y: 4em;
@@ -10,20 +10,17 @@ body {
     background-color: rgba(65, 130, 189, 1);
     color: white;
 }
-
 header {
-    background-color: rgba(11,49,87,1);
+    background-color: rgba(11, 49, 87, 1);
     padding: 0.5em 10% 0.5em 10%;
     height: 3em;
 }
-
 header h1 {
     display: inline;
     color: white;
     margin-left: 0.7em;
     height: 3em;
 }
-
 header .btn {
     display: block;
     float: right;
@@ -39,13 +36,11 @@ header .btn:hover {
     background-color: rgba(239, 147, 35, 0.8);
     text-decoration: underline;
 }
-
 .container {
     width: 80%;
     margin: auto;
     padding-top: 2em;
 }
-
 .player {
     text-align: center;
 }
@@ -81,27 +76,27 @@ header .btn:hover {
     display: block;
     float: left;
 }
-
 .player ul li.fill:before {
     background-image: url('../img/correct-white.png');
 }
 .player ul li.circle:before {
-    background-image: url('../img/unknown-white.png');    
+    background-image: url('../img/unknown-white.png');
 }
-.player ul li.cross:before {    
+.player ul li.cross:before {
     background-image: url('../img/incorrect-white.png');
 }
-
 .container > p {
     text-align: center;
     margin-top: 2em;
     font-size: 1.6em;
 }
-
-
 form {
     width: 102%;
     margin-left: -1%;
+}
+fieldset {
+    /* does not work*/
+    border: none;
 }
 input[type="checkbox"]+label {
     background-color: rgba(187, 214, 239, 1);
@@ -139,13 +134,11 @@ input[type="submit"] {
     background-position-x: 6.5em;
     background-position-y: 0.35em;
 }
-
 footer {
     text-align: center;
 }
-
 @media screen and (max-width: 32em) {
     body {
-	background-color: red;
+        background-color: red;
     }
 }
