@@ -3,63 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet " media="screen " href="./styles/style.css " />
-    <link rel="stylesheet " media="screen " href="./styles/reset.css " />
+    <link rel="stylesheet " media="screen " href="./styles/style.css "/>
+    <link rel="stylesheet " media="screen " href="./styles/reset.css "/>
 
     <title>Quiz Registration</title>
 </head>
 
 <body>
-    <header>
-        <img src="./img/big-logo-small.png " alt="Big Logo " />
+<header>
+    <img src="./img/big-logo-small.png " alt="Big Logo "/>
 
-        <h1>Quiz</h1>
-        <a class="btn " href="#" title="Anmelden">Anmelden</a>
+    <h1>Quiz</h1>
+    <a class="btn " href="#" title="Anmelden">Anmelden</a>
 
-    </header>
-    <section>
-        <div class="form_persData ">
-            <form method="post " action="table.html ">
-                <fieldset>
-                    <!-- http://www.dailycoding.com/Posts/layout_form_without_tables_with_css_trick.aspx -->
-                    <label>Persönliche Daten</label>
-                    <br>
-                    <label>Vorname:</label>
-                    <input type="text" id="name" name="name ">
-                    <br>
-                    <label>Nachname:</label>
-                    <input type="text" id="nachname" name="name ">
-                    <br>
-                    <label>Geburtstag:</label>
-                    <input type="date" id="geb">
-                    <br>
-                    <label>Geschlecht:</label>
+</header>
+<section>
+    <div class="register">
+        <form method="post" action="table.html ">
+            <fieldset>
+                <legend>Persönliche Daten</legend>
+                <div>
+                    <label>Vorname:
+                        <input type="text" id="name" name="name" autofocus>
+                    </label>
+                </div>
+                <div>
+                    <label>Nachname:
+                        <input type="text" id="nachname" name="name">
+                    </label>
+                </div>
+                <div>
+                    <label>Geburtstag:
+                        <input type="date" id="geb">
+                    </label>
+                </div>
+                <div>
+                <label>Geschlecht:</label>
                     <select>
                         <option>Männlich</option>
                         <option>Weiblich</option>
                     </select>
-                </fieldset>
-                <fieldset>
-                    <label>Login Daten</label>
-                    <br>
-                    <label>Benutzername*:</label>
-                    <input type="text" id="username" pattern=".{4,8}" required>
-                    <br>
-                    <label>Passwort*:</label>
-                    <input type="password" id="password" pattern=".{4,8}" required>
-                    <br>
-                </fieldset>
-                <a class="btn " href="#" title="Anmelden">Anmelden</a>
-                <button class="btn">Registrieren</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <small>Mit "* " gekennzeichnete Felder sind Pflichtfelder.
-            <br>&copy;
-            <time>2014</time>BIG Quiz
-        </small>
-    </footer>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Login Daten</legend>
+                <div>
+                    <label>Benutzername*:
+                        <input type="text" id="username" pattern=".{4,8}" required>
+                    </label>
+                </div>
+                <div>
+                    <label>Passwort*:
+                        <input type="password" id="password" pattern=".{4,8}" required>
+                    </label>
+                </div>
+            </fieldset>
+            <input name="Registrieren" type="submit" value="Registieren">
+        </form>
+    </div>
+</section>
+<footer>
+    <small>Mit "* " gekennzeichnete Felder sind Pflichtfelder.
+        <br>&copy;
+        <time>2014</time>
+        BIG Quiz
+    </small>
+</footer>
 </body>
 
 </html>
