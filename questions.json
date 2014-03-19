@@ -1,0 +1,90 @@
+{
+    "question": {
+        "question_title": "my question",
+        "category": "cat1",
+        "answer1": {
+            "isCorrect": true,
+            "answerText": "my long answerText"
+        },
+        "answer2:": {
+            "isCorrect": true,
+            "answerText": "my long answerText2"
+        },
+
+        "answer3:": {
+            "isCorrect": true,
+            "answerText": "my long answerText3"
+        },
+
+        "answer4:": {
+            "isCorrect": true,
+            "answerText": "my long answerText4"
+        }
+    },
+    "question": {
+        "question_title": "Welche zwei LVAs werden im MOdul EWA zusammengefasst?",
+        "category": "cat1",
+        "answer1": {
+            "isCorrect": false,
+            "answerText": "IT Strategie"
+        },
+        "answer2:": {
+            "isCorrect": true,
+            "answerText": "Web Engineering"
+        },
+
+        "answer3:": {
+            "isCorrect": true,
+            "answerText": "Semistrukturierte Daten"
+        },
+
+        "answer4:": {
+            "isCorrect": false,
+            "answerText": "Objektorientierte Modellierung"
+        }
+    },
+    "question": {
+        "question_title": "Which webframework is cool?",
+        "category": "cat2",
+        "answer1": {
+            "isCorrect": true,
+            "answerText": "Angular"
+        },
+        "answer2:": {
+            "isCorrect": true,
+            "answerText": "Play"
+        },
+
+        "answer3:": {
+            "isCorrect": false,
+            "answerText": "foo"
+        },
+
+        "answer4:": {
+            "isCorrect": false,
+            "answerText": "bar"
+        }
+    },
+    "question": {
+        "question_title": "Welche LVA macht mehr Spass?",
+        "category": "cat2",
+        "answer1": {
+            "isCorrect": false,
+            "answerText": "Mathe 1"
+        },
+        "answer2:": {
+            "isCorrect": false,
+            "answerText": "Mathe 2"
+        },
+
+        "answer3:": {
+            "isCorrect": false,
+            "answerText": "Statistik"
+        },
+
+        "answer4:": {
+            "isCorrect": true,
+            "answerText": "Datenanalyse"
+        }
+    }
+}

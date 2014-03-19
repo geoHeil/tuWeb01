@@ -1,9 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<html lang="de">
 
+<head>
+    <img src="img/big-logo-small.png"></img>
+    <meta charset=utf-8>
+    <title>Quiz Registration</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz</h1>
+        <button>Anmelden</button>
+    </header>
+    <div class="form_persData">
+        <!-- http://www.dailycoding.com/Posts/layout_form_without_tables_with_css_trick.aspx -->
+        <label>Persönliche Daten</label>
+        <br>
+        <label>Vorname:</label>
+        <input id="name" name="name">
+        <br>
+        <label>Nachname:</label>
+        <input id="nachname" name="name">
+        <br>
+        <label>Geburtstag:</label>
+        <input id="geb">
+        <br>
+        <label></label>
+        <label>Geschlecht:</label>
+        <select>
+            <option>Männlich</option>
+            <option>Weiblich</option>
+        </select>
+        <br>
+        <label>Login Daten</label>
+        <br>
+        <label>Benutzername*:</label>
+        <input id="username">
+        <br>
+        <label>Passwort*:</label>
+        <input id="password">
+        <br>
+        <button>Registrieren</button>
+    </div>
+    <footer>
+        Mit "*" gekennzeichnete Felder sind Pflichtfelder.
+        <p>© 2014 BIG Quiz</p>
+    </footer>
 </body>
+
 </html>
