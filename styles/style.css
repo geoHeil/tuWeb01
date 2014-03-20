@@ -128,10 +128,9 @@
      float: right;
      margin-right: 1%;
      border: 1px solid black;
+     background-position: 73% center;
      background-image: url('../img/white-arrow-right.png');
      background-repeat: no-repeat;
-     background-position-x: 6.5em;
-     background-position-y: 0.35em;
  }
  footer {
      text-align: center;

@@ -23,19 +23,18 @@
                 <fieldset>
                     <legend>Persönliche Daten</legend>
                     <div>
-                        <label>Vorname:
-                            <input type="text" id="name" name="name" autofocus>
-                        </label>
+                        <label for="firstname">Vorname:</label>
+                        <input type="text" id="firstname" name="name" autofocus>
                     </div>
                     <div>
-                        <label>Nachname:
-                            <input type="text" id="nachname" name="name">
-                        </label>
+                        <label for="surname">Nachname:</label>
+                        <input type="text" id="surname" name="nachname">
+
                     </div>
                     <div>
-                        <label>Geburtstag:
-                            <input type="date" id="geb">
-                        </label>
+                        <label for="geb">Geburtstag:</label>
+                        <input type="date" id="geb" name="geburtstag">
+
                     </div>
                     <div>
                         <label>Geschlecht:</label>
@@ -48,14 +47,14 @@
                 <fieldset>
                     <legend>Login Daten</legend>
                     <div>
-                        <label>Benutzername*:
-                            <input type="text" id="username" pattern=".{4,8}" required>
-                        </label>
+                        <label>Benutzername*:</label>
+                        <input type="text" id="username" pattern=".{4,8}" required>
+
                     </div>
                     <div>
-                        <label>Passwort*:
-                            <input type="password" id="password" pattern=".{4,8}" required>
-                        </label>
+                        <label>Passwort*:</label>
+                        <input type="password" id="password" pattern=".{4,8}" required>
+
                     </div>
                 </fieldset>
                 <input name="Registrieren" type="submit" value="Registieren">
