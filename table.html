@@ -3,9 +3,9 @@
 
 <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" media="screen" href="./styles/reset.css"/>
-    <link rel="stylesheet" media="screen" href="./styles/style.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" media="screen" href="./styles/reset.css" />
+    <link rel="stylesheet" media="screen" href="./styles/style.css" />
 
 
     <title>BusinessInformatics Group Quiz</title>
@@ -13,69 +13,73 @@
 
 <body>
 
-<header>
-    <img src="./img/big-logo-small.png" alt="Big Logo"/>
+    <header>
+        <img src="./img/big-logo-small.png" alt="Big Logo" />
 
-    <h1>Quiz</h1>
-    <a class="btn" href="#" title="Abmelden">Abmelden</a>
+        <h1>Quiz</h1>
+        <a class="btn" href="#" title="Abmelden">Abmelden</a>
 
-</header>
+    </header>
 
-<div class="container">
-    <div class="player">
-        <div>
-            Spieler 1
-            <br>
-            <ul>
-                <li class="fill">Frage 1: richtig</li>
-                <li class="cross">Frage 2: falsch</li>
-                <li class="circle">Frage 3: nicht beantwortet</li>
-            </ul>
+    <div class="container">
+        <div class="player">
+            <div>
+                Spieler 1
+                <br>
+                <ul>
+                    <li class="fill">Frage 1: richtig</li>
+                    <li class="cross">Frage 2: falsch</li>
+                    <li class="circle">Frage 3: nicht beantwortet</li>
+                </ul>
+            </div>
+            <div>
+                Spieler 2
+                <br>
+                <ul>
+                    <li class="fill">Frage 1: richtig</li>
+                    <li class="fill">Frage 2: richtig</li>
+                    <li class="circle">Frage 3: nicht beantwortet</li>
+                </ul>
+            </div>
+            <h2>EWA</h2>
         </div>
-        <div>
-            Spieler 2
+
+        <p>Welche zwei LVAs werden im Modul EWA zusammengefasst?</p>
+
+        <form>
+
+            <input type="checkbox" value="1" id="antwort1" />
+            <label for="antwort1">IT Strategie</label>
+
+            <input type="checkbox" value="2" id="antwort2" />
+            <label for="antwort2">Web Engineering</label>
+
+            <input type="checkbox" value="3" id="antwort3" />
+            <label for="antwort3">Semistrukturierte Daten</label>
+
+            <input type="checkbox" value="4" id="antwort4" />
+            <label for="antwort4">Objektorientierte Modellierung</label>
+
+            <input type="submit" value="Weiter">
+
+        </form>
+
+        <div class="timer">
+            Verbleibende Zeit:
+            <span>00:19</span>
             <br>
-            <ul>
-                <li class="fill">Frage 1: richtig</li>
-                <li class="fill">Frage 2: richtig</li>
-                <li class="circle">Frage 3: nicht beantwortet</li>
-            </ul>
+            <progress value="10" max="100"></progress>
         </div>
-        <h2>EWA</h2>
+
+
     </div>
-
-    <p>Welche zwei LVAs werden im Modul EWA zusammengefasst?</p>
-
-    <form>
-
-        <input type="checkbox" value="1" id="antwort1"/>
-        <label for="antwort1">IT Strategie</label>
-
-        <input type="checkbox" value="2" id="antwort2"/>
-        <label for="antwort2">Web Engineering</label>
-
-        <input type="checkbox" value="3" id="antwort3"/>
-        <label for="antwort3">Semistrukturierte Daten</label>
-
-        <input type="checkbox" value="4" id="antwort4"/>
-        <label for="antwort4">Objektorientierte Modellierung</label>
-
-        <input type="submit" value="Weiter">
-
-    </form>
-
-    <div class="timer">
-        Verbleibende Zeit:
-        <span>00:19</span>
-        <br>
-        <progress value="10" max="100"></progress>
-    </div>
-
-
-</div>
-<footer>
-    © 2014 BIG Quiz
-</footer>
+    <footer>
+        <small>
+            <br>&copy;
+            <time>2014</time>
+            BIG Quiz
+        </small>
+    </footer>
 
 </body>
 
