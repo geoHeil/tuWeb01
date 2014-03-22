@@ -21,8 +21,7 @@
 
     </header>
 
-    <div class="container">
-        <div class="player">
+    <section class="player">
             <div>
                 Spieler 1
                 <br>
@@ -42,11 +41,12 @@
                 </ul>
             </div>
             <h2>EWA</h2>
-        </div>
+    </section>
+    <section>
 
         <p>Welche zwei LVAs werden im Modul EWA zusammengefasst?</p>
 
-        <form>
+        <form class="clearfix">
 
             <input type="checkbox" value="1" id="antwort1" />
             <label for="antwort1">IT Strategie</label>
@@ -60,25 +60,24 @@
             <input type="checkbox" value="4" id="antwort4" />
             <label for="antwort4">Objektorientierte Modellierung</label>
 
-            <input type="submit" value="Weiter">
+            <input type="submit" value="Weiter" class="clearfix">
 
         </form>
-
-        <div class="timer">
+    </section>
+    <section class="timer">
             Verbleibende Zeit:
             <span>00:19</span>
-            <br>
+            <br />
             <progress value="10" max="100"></progress>
-        </div>
+	    <br />
+	    Letztes Spiel: Nie
+    </section>
 
-
-    </div>
+ 
     <footer>
-        <small>
             <br>&copy;
             <time>2014</time>
             BIG Quiz
-        </small>
     </footer>
 
 </body>

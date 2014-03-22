@@ -1,6 +1,13 @@
  a {
      text-decoration: none;
  }
+ 
+ .clearfix:after {
+     content: ' ';
+     clear: both;
+     display: block;
+}
+ 
  body {
      background-image: url('../img/style1-background.png');
      background-position-y: 4em;
@@ -17,9 +24,9 @@
  header h1 {
      display: inline;
      color: white;
-     margin-left: 0.7em;
-     height: 3em;
- }
+     line-height: 1.5em;
+     margin-left: 2em;
+}
  header .btn {
      display: block;
      float: right;
@@ -30,22 +37,28 @@
      padding: 0.5em 1.5em 0.5em 1.5em;
      color: white;
      font-weight: bold;
- }
+ 
+     margin-top: 0.5em;
+}
  header .btn:hover {
      background-color: rgba(239, 147, 35, 0.8);
      text-decoration: underline;
  }
- .container {
+ header img {
+     position: absolute;
+ }
+ section {
      width: 80%;
      margin: auto;
-     padding-top: 2em;
+     padding-top: 0em;
  }
  .player {
      text-align: center;
  }
  .player > h2 {
      font-size: 1.7em;
- }
+ 
+}
  .player > div {
      font-weight: bold;
      float: right;
@@ -84,18 +97,13 @@
  .player ul li.cross:before {
      background-image: url('../img/incorrect-white.png');
  }
- .container > p {
+ section > p {
      text-align: center;
-     margin-top: 2em;
      font-size: 1.6em;
  }
  form {
      width: 102%;
      margin-left: -1%;
- }
- fieldset {
-     /* does not work*/
-     border: none;
  }
  input[type="checkbox"]+label {
      background-color: rgba(187, 214, 239, 1);
@@ -122,21 +130,107 @@
      padding: 0.5em 4em 0.5em 2em;
      background-color: rgba(63, 210, 76, 1);
      color: white;
-     border: none;
-     border-radius: 0.5em;
      display: block;
      float: right;
      margin-right: 1%;
-     border: 1px solid black;
-     background-position: 73% center;
+     
+     background-position: 90% center;
      background-image: url('../img/white-arrow-right.png');
      background-repeat: no-repeat;
  }
+ input[type="submit"], input[type="text"],input[type="date"],input[type="password"], select {
+    border-radius: 0.5em;
+    border: 1px solid black;
+
+ }
+ 
+.timer {
+    margin-top: -2em;
+}
+.timer > progress {
+     width: 50%;
+ 
+     margin-top: 0.5em;
+     margin-bottom: 2em;
+}
+ 
  footer {
      text-align: center;
  }
+ 
+ /* Register */
+ fieldset {
+     border: none;
+     margin-top: 2em;
+     width: 70%;
+     margin-left: 15%;
+ }
+ 
+ fieldset > div {
+     width: 100%;
+     padding: 0.5em 0;
+ }
+ fieldset > div > label {
+     display: inline-block;
+     width: 30%;
+ }
+ fieldset input, fieldset select {
+     width: 60%;
+     padding: 0.2em;
+     background-color: white;
+     height: 1.5em;
+}
+ fieldset > legend {
+     font-size: 1.2em;
+     font-weight: bold;
+ }
+ fieldset + input[type="submit"] {
+     margin-right: 20%;
+ }
+ 
+ .center {
+     text-align: center;
+     margin-top: 2em;
+     margin-bottom: 4em;
+ }
+ 
  @media screen and (max-width: 32em) {
-     body {
-         background-color: red;
-     }
+     section > p {
+	 font-size: 1.2em;
+     
+	 font-weight: lighter;
+	 line-height: 1.5em;
+    }
+    .player h2 {
+	padding-top: 2.2em;
+    }
+    
+    input[type="checkbox"]+label, input[type="submit"] {
+     width: 100%;
+     margin-left: 0%;
+     margin-right: 0%;
+     margin-bottom: 2%;
+    }
+    .timer {
+	margin-top: 1em;
+    }
+    
+    fieldset {
+	width: 100%;
+	margin-left: 0%;
+    }
+    fieldset > legend {
+	margin-left: -1em;
+    }
+    fieldset > div > label {
+	width: 100%;
+    }
+    fieldset > div > input, fieldset > div > select {
+	width: 95%;
+    }
+    fieldset + input[type="submit"] {
+	width: 12em;
+	float: right;
+	margin-right: 0em;
+    }
  }
