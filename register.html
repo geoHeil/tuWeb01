@@ -10,65 +10,65 @@
 </head>
 
 <body>
-     <header>
+    <header>
+        <a class="btn" href="#" title="Abmelden">Abmelden</a>
         <img src="./img/big-logo-small.png" alt="Big Logo" />
 
         <h1>Quiz</h1>
-        <a class="btn" href="#" title="Abmelden">Abmelden</a>
 
     </header>
     <section>
-        
-            <form method="post" action="table.html" class="clearfix">
-                <fieldset>
-                    <legend>Persönliche Daten</legend>
-                    <div>
-                        <label for="firstname">Vorname:</label>
-                        <input type="text" id="firstname" name="name" autofocus>
-                    </div>
-                    <div>
-                        <label for="surname">Nachname:</label>
-                        <input type="text" id="surname" name="nachname">
 
-                    </div>
-                    <div>
-                        <label for="geb">Geburtstag:</label>
-                        <input type="date" id="geb" name="geburtstag">
+        <form method="post" action="table.html" class="clearfix">
+            <fieldset>
+                <legend>Persönliche Daten</legend>
+                <div>
+                    <label for="firstname">Vorname:</label>
+                    <input type="text" id="firstname" name="name" autofocus>
+                </div>
+                <div>
+                    <label for="surname">Nachname:</label>
+                    <input type="text" id="surname" name="nachname">
 
-                    </div>
-                    <div>
-                        <label>Geschlecht:</label>
-                        <select>
-                            <option>Männlich</option>
-                            <option>Weiblich</option>
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Login Daten</legend>
-                    <div>
-                        <label>Benutzername*:</label>
-                        <input type="text" id="username" pattern=".{4,8}" required>
+                </div>
+                <div>
+                    <label for="geb">Geburtstag:</label>
+                    <input type="date" id="geb" name="geburtstag">
 
-                    </div>
-                    <div>
-                        <label>Passwort*:</label>
-                        <input type="password" id="password" pattern=".{4,8}" required>
+                </div>
+                <div>
+                    <label>Geschlecht:</label>
+                    <select>
+                        <option>Männlich</option>
+                        <option>Weiblich</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Login Daten</legend>
+                <div>
+                    <label>Benutzername*:</label>
+                    <input type="text" id="username" pattern=".{4,8}" required>
 
-                    </div>
-                </fieldset>
-                <input name="Registrieren" type="submit" value="Registieren" class="clearfix">
-            </form>
+                </div>
+                <div>
+                    <label>Passwort*:</label>
+                    <input type="password" id="password" pattern=".{4,8}" required>
+
+                </div>
+            </fieldset>
+            <input name="Registrieren" type="submit" value="Registieren" class="clearfix">
+        </form>
     </section>
     <section class="center">
-	
-	Mit " * " gekennzeichnete Felder sind Pflichtfelder.
+
+        Mit " * " gekennzeichnete Felder sind Pflichtfelder.
     </section>
     <footer>
-        
-            <br>&copy;
-            <time>2014</time>
-            BIG Quiz
+
+        <br>&copy;
+        <time>2014</time>
+        BIG Quiz
     </footer>
 </body>
 
