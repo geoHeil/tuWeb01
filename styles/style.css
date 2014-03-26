@@ -1,16 +1,14 @@
  a {
      text-decoration: none;
  }
- 
  .clearfix:after {
      content: ' ';
      clear: both;
      display: block;
-}
- 
+ }
  body {
      background-image: url('../img/style1-background.png');
-     background-position-y: 4em;
+     background-position: 0 -4em;
      background-repeat: no-repeat;
      background-size: cover;
      background-color: rgba(65, 130, 189, 1);
@@ -26,7 +24,7 @@
      color: white;
      line-height: 1.5em;
      margin-left: 2em;
-}
+ }
  header .btn {
      display: block;
      float: right;
@@ -37,9 +35,8 @@
      padding: 0.5em 1.5em 0.5em 1.5em;
      color: white;
      font-weight: bold;
- 
      margin-top: 0.5em;
-}
+ }
  header .btn:hover {
      background-color: rgba(239, 147, 35, 0.8);
      text-decoration: underline;
@@ -57,8 +54,7 @@
  }
  .player > h2 {
      font-size: 1.7em;
- 
-}
+ }
  .player > div {
      font-weight: bold;
      float: right;
@@ -133,31 +129,29 @@
      display: block;
      float: right;
      margin-right: 1%;
-     
      background-position: 90% center;
      background-image: url('../img/white-arrow-right.png');
      background-repeat: no-repeat;
  }
- input[type="submit"], input[type="text"],input[type="date"],input[type="password"], select {
-    border-radius: 0.5em;
-    border: 1px solid black;
-
+ input[type="submit"],
+ input[type="text"],
+ input[type="date"],
+ input[type="password"],
+ select {
+     border-radius: 0.5em;
+     border: 1px solid black;
  }
- 
-.timer {
-    margin-top: -2em;
-}
-.timer > progress {
+ .timer {
+     margin-top: -2em;
+ }
+ .timer > progress {
      width: 50%;
- 
      margin-top: 0.5em;
      margin-bottom: 2em;
-}
- 
+ }
  footer {
      text-align: center;
  }
- 
  /* Register */
  fieldset {
      border: none;
@@ -165,7 +159,6 @@
      width: 70%;
      margin-left: 15%;
  }
- 
  fieldset > div {
      width: 100%;
      padding: 0.5em 0;
@@ -174,12 +167,13 @@
      display: inline-block;
      width: 30%;
  }
- fieldset input, fieldset select {
+ fieldset input,
+ fieldset select {
      width: 60%;
      padding: 0.2em;
      background-color: white;
      height: 1.5em;
-}
+ }
  fieldset > legend {
      font-size: 1.2em;
      font-weight: bold;
@@ -187,50 +181,51 @@
  fieldset + input[type="submit"] {
      margin-right: 20%;
  }
- 
  .center {
      text-align: center;
      margin-top: 2em;
      margin-bottom: 4em;
  }
- 
+ .offscreen {
+     position: absolute;
+     left: -999em;
+ }
  @media screen and (max-width: 32em) {
      section > p {
-	 font-size: 1.2em;
-     
-	 font-weight: lighter;
-	 line-height: 1.5em;
-    }
-    .player h2 {
-	padding-top: 2.2em;
-    }
-    
-    input[type="checkbox"]+label, input[type="submit"] {
-     width: 100%;
-     margin-left: 0%;
-     margin-right: 0%;
-     margin-bottom: 2%;
-    }
-    .timer {
-	margin-top: 1em;
-    }
-    
-    fieldset {
-	width: 100%;
-	margin-left: 0%;
-    }
-    fieldset > legend {
-	margin-left: -1em;
-    }
-    fieldset > div > label {
-	width: 100%;
-    }
-    fieldset > div > input, fieldset > div > select {
-	width: 95%;
-    }
-    fieldset + input[type="submit"] {
-	width: 12em;
-	float: right;
-	margin-right: 0em;
-    }
+         font-size: 1.2em;
+         font-weight: lighter;
+         line-height: 1.5em;
+     }
+     .player h2 {
+         padding-top: 2.2em;
+     }
+     input[type="checkbox"]+label,
+     input[type="submit"] {
+         width: 100%;
+         margin-left: 0%;
+         margin-right: 0%;
+         margin-bottom: 2%;
+     }
+     .timer {
+         margin-top: 1em;
+     }
+     fieldset {
+         width: 100%;
+         margin-left: 0%;
+     }
+     fieldset > legend {
+         margin-left: -1em;
+     }
+     fieldset > div > label {
+         width: 100%;
+     }
+     fieldset > div > input,
+     fieldset > div > select {
+         width: 95%;
+     }
+     fieldset + input[type="submit"] {
+         width: 12em;
+         float: right;
+         margin-right: 0em;
+     }
  }
