@@ -24,37 +24,36 @@
                 <legend>Persönliche Daten</legend>
                 <div>
                     <label for="firstname">Vorname:</label>
-                    <input type="text" id="firstname" name="name" autofocus>
+                    <input type="text" id="firstname" name="firstname" autofocus>
                 </div>
                 <div>
                     <label for="surname">Nachname:</label>
-                    <input type="text" id="surname" name="nachname">
+                    <input type="text" id="surname" name="surname">
 
                 </div>
                 <div>
-                    <label for="geb">Geburtstag:</label>
-                    <input type="date" id="geb" name="geburtstag">
+                    <label for="geburtstag">Geburtstag:</label>
+                    <input type="date" id="geburtstag" name="geburtstag">
 
                 </div>
                 <div>
-                    <label>Geschlecht:</label>
-                    <select>
-                        <option>Männlich</option>
-                        <option>Weiblich</option>
+                    <label for="geschlecht">Geschlecht:</label>
+                    <select name="gender" id="geschlecht">
+                        <option value="1">Männlich</option>
+                        <option value="2">Weiblich</option>
                     </select>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Login Daten</legend>
                 <div>
-                    <label>Benutzername*:</label>
+                    <label for="username">Benutzername*:</label>
                     <input type="text" id="username" pattern=".{4,8}" required>
 
                 </div>
                 <div>
-                    <label>Passwort*:</label>
+                    <label for="password">Passwort*:</label>
                     <input type="password" id="password" pattern=".{4,8}" required>
-
                 </div>
             </fieldset>
             <input name="Registrieren" type="submit" value="Registieren" class="clearfix">
