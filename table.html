@@ -3,9 +3,11 @@
 
 <head>
 
+    <script type="text/javascript" src="js/jquery.js"></script>‌
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" media="screen" href="./styles/reset.css" />
     <link rel="stylesheet" media="screen" href="./styles/style.css" />
+
 
 
     <title>BusinessInformatics Group Quiz</title>
@@ -16,6 +18,7 @@
     <header>
         <img src="./img/big-logo-small.png" alt="Big Logo" />
         <a class="btn" href="#" title="Abmelden">Abmelden</a>
+
         <h1>Quiz</h1>
 
     </header>
@@ -68,9 +71,10 @@
     <section class="timer">
         Verbleibende Zeit:
         <span>00:19</span>
-        <br />
-        <progress value="10" max="100"></progress>
-        <br />Letztes Spiel: Nie
+        <div id="val"></div>
+        <br/>
+        <progress max="3000" value="1"></progress>
+        <br/>Letztes Spiel: Nie
     </section>
 
 
@@ -79,6 +83,26 @@
         <time>2014</time>
         BIG Quiz
     </footer>
+
+    <script>
+        $(document).ready(function(){
+    var interval = 1, //How much to increase the progressbar per frame
+        updatesPerSecond = 1000/60, //Set the nr of updates per second (fps)
+        progress =  $('progress'),
+        animator = function(){
+            progress.val(progress.val()+interval);
+            $('#val').text(progress.val());
+            if ( progress.val()+interval < progress.attr('max')){
+               setTimeout(animator, updatesPerSecond);
+            } else { 
+                //$('#val').text('Done');
+                progress.val(progress.attr('max'));
+            }
+        }
+    
+    setTimeout(animator, updatesPerSecond);
+});
+    </script>
 
 </body>
 
