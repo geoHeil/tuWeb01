@@ -91,8 +91,7 @@
         progress =  $('progress'),
         animator = function(){
             progress.val(progress.val()+interval);
-            $('#val').text(6000- (progress.val()));
-            
+            $('#val').text(secToMMSS(6000- (progress.val())));
             if ( progress.val()+interval < progress.attr('max')){
                setTimeout(animator, updatesPerSecond);
             } else { 
