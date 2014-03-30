@@ -4,12 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" media="screen " href="./styles/reset.css" />
-
     <link rel="stylesheet" media="screen " href="./styles/style.css" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/framework.js"></script>
+    
     <title>Quiz Registration</title>
 </head>
 
 <body>
+    
+    <script>
+        
+        function validate() {
+            
+            if(isUsernameValid() && isPasswordValid() && isBirthdateValid())
+                $("#btnsubmit").prop( "disabled", false );
+            else
+                $("#btnsubmit").prop( "disabled", true );
+        }
+        
+        function onBirthdateChange() {
+            
+            if(isBirthdateValid())
+                $("#birthdateError").html("");
+            else
+                $("#birthdateError").html("Das Datumsformat is ungültig");
+            
+            validate();
+        }
+        
+         function isBirthdateValid() {            
+            if(!$("#birthdate").val())
+                return true;
+            return isValidDate($("#birthdate").val());
+        }
+        
+        function isValidDate(strDate) {
+            return strDate.match(/^[0-9]{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])/);
+        }
+        
+        function onUsernameInput() {
+            if(isUsernameValid())
+                $("#usernameError").html("");
+            else
+                $("#usernameError").html("min. 4 Zeichen max. 8 Zeichen");
+            
+            validate();
+        }
+        
+        function isUsernameValid() {
+            var length = $("#username").val().length;
+            return length >= 4 && length <= 8;
+        }
+        
+        function onPasswordInput() {
+            if(isPasswordValid())
+                $("#passwordError").html("");
+            else
+                $("#passwordError").html("min. 4 Zeichen max. 8 Zeichen");
+            
+            validate();
+        }
+        
+        function isPasswordValid() {
+            var length = $("#password").val().length;
+            return length >= 4 && length <= 8;
+        }
+        
+    </script>
+    
     <header>
         <a class="btn" href="#" title="Abmelden">Abmelden</a>
         <img src="./img/big-logo-small.png" alt="Big Logo" />
@@ -19,7 +82,7 @@
     </header>
     <section>
 
-        <form method="post" action="table.html" class="clearfix">
+        <form id="accountForm" method="post" action="table.html" class="clearfix" >
             <fieldset>
                 <legend>Persönliche Daten</legend>
                 <div>
@@ -32,9 +95,9 @@
 
                 </div>
                 <div>
-                    <label for="geburtstag">Geburtstag:</label>
-                    <input type="date" id="geburtstag" name="geburtstag">
-
+                    <label for="birthdate">Geburtstag:</label>
+                    <input type="date" id="birthdate" name="geburtstag" onchange="onBirthdateChange()" >
+                    <span id="birthdateError" class="inputerror"></span>
                 </div>
                 <div>
                     <label for="geschlecht">Geschlecht:</label>
@@ -48,15 +111,16 @@
                 <legend>Login Daten</legend>
                 <div>
                     <label for="username">Benutzername*:</label>
-                    <input type="text" id="username" pattern=".{4,8}" required>
-
+                    <input type="text" id="username" oninput="onUsernameInput()" required>
+                    <span id="usernameError" class="inputerror"></span>
                 </div>
                 <div>
                     <label for="password">Passwort*:</label>
-                    <input type="password" id="password" pattern=".{4,8}" required>
+                    <input type="password" id="password" oninput="onPasswordInput()" pattern=".{4,8}" required>
+                    <span id="passwordError" class="inputerror"></span>
                 </div>
             </fieldset>
-            <input name="Registrieren" type="submit" value="Registieren" class="clearfix">
+            <input id="btnsubmit" name="Registrieren" type="submit" value="Registrieren" disabled class="clearfix" >
         </form>
     </section>
     <section class="center">

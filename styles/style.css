@@ -1,6 +1,14 @@
  a {
      text-decoration: none;
  }
+ 
+ .inputerror {
+     display: inline-block;
+     font-size: 90%;
+     color: red;
+ }
+
+ 
  .clearfix:after {
      content: ' ';
      clear: both;
@@ -132,6 +140,9 @@
      background-position: 90% center;
      background-image: url('../img/white-arrow-right.png');
      background-repeat: no-repeat;
+ }
+ input[type=submit]:disabled,button:disabled {
+     background-color: rgba(204, 204, 204, 1);
  }
  input[type="submit"],
  input[type="text"],
