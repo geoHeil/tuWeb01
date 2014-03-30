@@ -92,7 +92,7 @@
         animator = function(){
             progress.val(progress.val()+interval);
             
-            var timeSec = Math.floor((6000 - progress.val()) / 100);
+            var timeSec = Math.floor((6000 - progress.val()) / 100*2);
             
             $('#val').text(secToMMSS(timeSec));
             if ( progress.val()+interval < progress.attr('max')){
