@@ -73,7 +73,7 @@
         Verbleibende Zeit:
         <div id="val"></div>
         <br/>
-        <progress max="6000" value="1"></progress>
+        <progress max="6000" value="0"></progress>
         <br/>Letztes Spiel: Nie
     </section>
 
@@ -91,7 +91,8 @@
         progress =  $('progress'),
         animator = function(){
             progress.val(progress.val()+interval);
-            $('#val').text(6000-progress.val());
+            $('#val').text(6000- (progress.val()));
+            
             if ( progress.val()+interval < progress.attr('max')){
                setTimeout(animator, updatesPerSecond);
             } else { 
