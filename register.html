@@ -23,7 +23,7 @@
                 $("#btnsubmit").prop( "disabled", true );
         }
         
-        function onBirthdateChange() {
+        function onBirthdateInput() {
             
             if(isBirthdateValid())
                 $("#birthdateError").html("");
@@ -91,12 +91,12 @@
                 </div>
                 <div>
                     <label for="surname">Nachname:</label>
-                    <input type="text" id="surname" name="surname">
+                    <input type="text" id="surname" name="surname" >
 
                 </div>
                 <div>
                     <label for="birthdate">Geburtstag:</label>
-                    <input type="date" id="birthdate" name="geburtstag" onchange="onBirthdateChange()" >
+                    <input type="date" id="birthdate" name="geburtstag" oninput="onBirthdateInput()" >
                     <span id="birthdateError" class="inputerror"></span>
                 </div>
                 <div>
